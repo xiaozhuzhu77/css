@@ -2,17 +2,42 @@
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-   <title>内部CSS样式</title>
+   <title>添加多级编号</title>
    <style type="text/css">
-      table{
-            background-color:#3dffee;
-
+div>h2{
+      counter-increment: categorycounter;
+      counter-reset:subcounter;
       }
 
-      td{
-      background-color:#FFFFFF;
-      font-family:"楷体_GB2312";
-      font-size:20pt;
-      text-shadow:-8px;6px;2px
-      
-      }
+ div>div{
+         counter-increment: subcounter;
+        }
+
+div>h2:before{
+        content: counter(categorycounter,georgian) '.';
+        font-size:20px;
+        font-weight:bold;
+         }
+  div>div:before{
+                content:'第' counter(subcounter,cjk-ideographic) '本.';
+               font-size:14px;
+               font-weight:boldi
+               margin-left:24px;
+             }
+   </style>
+   </head>
+
+   <body>
+   <div>
+        <h2>小猪猪的书库</h2>
+        <div>红楼梦</div>
+        <div>西游记</div>
+        <div>三国演义</div>
+        
+        <h2>其他图书</h2>
+        <div>父与子</div>
+        <div>老人与海</div>
+    </div>
+    </body>
+    </html>
+
