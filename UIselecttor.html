@@ -1,6 +1,68 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-   <title>UI元素状态伪类选择器</title>
-   <style type=
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UI元素状态的伪类选择器</title>
+<style type="text/css">
+   td{
+        border:1px  solid black;
+		padding:4px;
+	}
+	
+   tr:hover{
+           background-color:#66CC66;
+   }
+   input:active{
+               background-color:blue;
+			   }
+    
+	:focus{
+	       textt-decoration:underline;
+		   }
+		   
+	:enabled{
+	font-family:"宋体";
+	font-weight:bold;
+	font-size:14px;
+	}
+	
+	:disabled{
+	font-family:"新宋体";
+	font-weight:bold;
+	font-size:14px;
+	}
+	
+	:checked{
+	outline:red solid 5px;
+	}
+	:default{
+	outline:#bb solid 5px;
+	}
+	
+	</style>
+</head>
+
+<body>
+<table style="width:400px; border-collapse:collapse">
+     <tr>
+	    <td>疯狂Java讲义</td>
+	</tr>
+	<tr>
+	    <td>小猪猪的图书吗？</td>
+		</tr>
+	
+	<tr contentEditable="true">
+	  <td>疯狂什么啊</td>
+	  </tr>
+</table>
+<button disabled>不可用的按钮</button>
+<input type="text" disabled  value="不可用的文本框"/>
+<button >可用的按钮</button>
+<input type="text" value="可用的文本框"/>
+男：<input type="radio" value=" male" name="gender"/>
+女：<input type="radio" value="female" name="gender"/>
+未知：<input type="radio" checked value="unknow" name=="gender"/>
+
+</body>
+</html>
+=
