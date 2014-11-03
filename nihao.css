@@ -1,0 +1,26 @@
+html,body{
+
+padding:0px;
+margin:0px;
+background-color:#0099CC;
+}
+#title{
+font-size:20px;
+font-weight:bo0ld;
+text-align:center;
+padding:15px;
+background-color:#FFFFCC;
+border:1px solid #FFFF00;
+}
+#content{
+padding:6px;
+font-size:20px;
+line-height:130%;
+}
+img{
+float:left;
+height:400px;
+width:300px;
+filter:alpha(opacity=100,finishopacity=0,style=2);
+
+}
