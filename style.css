@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+	width: 734px;
+	margin: 0 auto;
+	height: 509px;
+}
+#footer {
+	width: 734px;
+	margin: 0 auto;
+	height: 40px;
+}
+body {
+	font-family: Tahoma, "Trebuchet MS", Arial;
+	font-size: 11px;
+	color: #dec5a5;
+	background-color: #161616;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+/*
+#left {
+	float: left;
+	width: 294px;
+	background-image: url(images/3.jpg);
+	background-repeat: no-repeat;
+	height: 509px;
+}
+*/
+#right {
+	float: right;
+	width: 129px;
+}
+#center {
+	float: right;
+	width: 308px;
+	background-image: url(images/cbg.gif);
+	background-repeat: no-repeat;
+	height: 509px;
+}
+.centerbox {
+	padding-top: 7px;
+	padding-right: 15px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+}
+.leftimg {
+	float: left;
+	padding-right: 6px;
+	display: block;
+}
+.rightimg {
+	float: right;
+	padding-left: 6px;
+	display: block;
+}
+.browntext {
+	color: #dda359;
+}
+#center label {
+	font-weight: bold;
+	color: #A58460;
+	float: left;
+	width: 80px;
+	margin-top: 4px;
+}
+#center input {
+	font-family: "Verdana";
+	font-size: 11px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
