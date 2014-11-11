@@ -1,0 +1,138 @@
+html,body,div,h2,ul{margin:0;padding:0;}
+.title{width:590px;
+margin:0 auto;
+padding-bottom:10px;
+border-bottom:1px solid #eaeaea;
+margin-bottom:18px;
+}
+.title a{
+  text-decoration:none;
+  font:17px/25.5px Arial;
+  color:#111;
+  margin-right:10px;
+}
+#a1{
+ color:#669;
+ margin-left:10px;
+}
+#a1:hover{
+color:white;
+background-color:#4b8ccb;
+}
+.choice{
+margin:20px auto;
+width:590px;
+padding-bottom:10px;
+border-bottom:1px solid #eaeaea;
+margin-bottom:18px;
+
+}
+.choice li{
+    text-decoration:none;
+    display:inline-block;
+    padding:1px 8px;
+    margin:0 3px 5px 0;
+    color:#666;
+    font-size:14px;
+    border-radius:2px;
+    font-family:Tahoma;
+    vertical-align:middle;
+}
+.choice li:hover{
+background-color:#eee;
+} 
+#rm{
+background-color:#4b8ccb;
+color:#fff;
+clear:both;
+}
+#rm:hover{
+background-color:#4b8ccb;
+}
+.check{
+margin:20px auto;
+width:590px;
+}
+.check label{
+font-size:13px;
+margin:10px auto;
+padding:15px 0;
+overflow:hidden;
+color:#666;
+vertical-align:middle;
+}
+input{
+    position:relative;
+}
+.ra1{
+display:inline-block;
+float:left}
+.ra1 label{
+margin-right:10px; 
+}
+.ra2{
+display:inline-block;
+float:right;
+}
+.ra2 label{
+    margin-left:10px;
+}
+.piclist{
+margin:10px auto;
+width:605px;
+font-size:12px;
+}
+.piclist li{
+list-style:none;
+margin:0 11.25px 10px 0;
+float:left;
+width:140px;
+color:#37a;
+height:249px; 
+}
+.piclist p{
+margin:5px 0 0 ;
+height:44px;
+overflow:hidden;
+text-align:center;
+}
+.piclist span{
+background-color:#62c14f;
+padding:2px;
+color:white;
+margin-right:5px;
+}
+.piclist li img{
+width:140px;
+ height:200px;
+ padding-left:3px;
+}
+strong{
+color:#e82100;
+font-size:12px;
+margin-left:5px;
+}
+#sm,#sm1{
+width:88px;
+height:12px;
+opacity:1;
+margin-top:
+10px;
+}
+.p2{
+height:34px;
+ width:590px;
+ margin:10px auto;
+clear:both;
+}
+.p2 a{
+color:#37a;
+text-decoration:none;
+font-size:14px;
+line-height:34px;
+display:block;
+ text-align:center;
+}
+.p2 a:hover{
+background-color:#eee;
+}

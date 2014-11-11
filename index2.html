@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>电影</title>
+  <style type="text/css">
+<!-- 
+*{padding:0;margin:0;}
+body.menu{margin:}
+.content{margin-left:500px;width:590px;}
+.title{border-bottom:1px solid #eee;padding-bottom:10px;cursor:default;}
+.title h2 a{text-decoration:none;font-size:17px;color:#111;}
+.title .a1{color:#37a;}
+.a1:hover{color:white;background-color:#4b8ccb;}
+.list{border-bottom:1px solid #eee;margin:15px auto 0;padding-bottom:15px;}
+.list li{display:inline-block;zoom:1;cursor:pointer;padding:1px 10px;margin:0 3px 5px 0;color:#666;font-size:14px;border-radius:2px;font-family:Tahoma;vertical-align:middle;}
+.list li:hover{background-color:#eee;}
+.list .rm{background-color:#4b8ccb;color:#fff;}
+.list .rm:hover{background-color:#4b8ccb;}
+.check{font-size:13px;margin:10px auto;padding:15px 0;overflow:hidden;color:#666;zoom:1;}
+.check li{vertical-align:middle;cursor:default;}
+input{position:relative;top:1px;}
+.ra1{display:inline-block;float:left}
+.ra1 li{;margin-right:10px; }
+.ra2{display:inline-block;float:right;}
+.ra2 li{margin-left:10px;}
+.piclist{margin-left:500px;width:605px;font-size:12px;}
+.piclist div{display:block;margin:0 11.25px 10px 0;float:left;width:140px;color:#37a;height:249px; }
+.piclist div p{margin:5px 0 0 ;height:44px;overflow:hidden;padding-left:10px;display:float;}
+.piclist div p span{background-color:#62c14f;padding:2px;color:white;margin-right:5px;}
+.piclist div img{width:140px; height:200px;}
+strong{color:#e82100;font-size:12px;margin-left:5px;}
+#sm,#sm1{width:88px;height:12px;opacity:1;margin-top:10px;}
+.p2{height:34px; width:590px; margin-left: 500px;clear:both;}
+.p2 a{color:#37a;text-decoration:none;font-size:14px;line-height:34px;display:block; text-align:center;}
+.p2 a:hover{background-color:#eee;}
+-->
+  </style>
+</head>
+<body>
+<div class="menu">
+<div  class="content">
+    <div class="title">
+        <h2><a href="">选电影</a>&nbsp;/&nbsp;<a href="" class="a1">选电视剧</a></h2>
+    </div>
+    <div class="list">
+               <li class="rm">热门</li>
+                <li>最新</li>
+                <li>经典</li>
+                <li>可播放</li>
+                <li>豆瓣高分</li>
+                <li>冷门佳片</li>
+                <li>华语</li>
+                <li>欧美</li>
+                <li>韩国</li>          
+                <li>日本</li>
+                <li>动作</li>
+                <li>喜剧</li>
+                <li>爱情</li>
+                <li>科幻</li>
+                <li>悬疑</li>
+                <li>恐怖</li>
+                <li>吴镇宇</li>
+    
+    </div>
+    <div class="check">
+        <div class="ra1">
+        <li><input type="radio" name="name" value="recommend" checked>按热度排序</li>  
+        <li><input type="radio" name="name" value="time">按时间排序</li>
+        <li><input type="radio" name="name" value="rank">按评价排序</li>
+       </div>
+       <div class="ra2">
+           <li><input type="checkbox" name="check">我没看过的</li>
+           <li><input type="checkbox" name="check2">可在线播放</li>
+       </div>
+   </div>
+</div>
+   <div class="piclist">
+       <div>
+           <img src="images/01.jpg"/><p>超体<strong>7.0</strong></p>
+      </div>
+
+      <div>
+          <img src="images/02.jpg"/><p>忍者神龟:变种时代<strong>6.5</strong></p>
+      </div>
+
+      <div>
+          <img src="images/03.jpg"/><p><span>新</span>帕罗奥图<strong>6.3</strong></p>
+      </div>
+
+      <div >
+          <img src="images/04.jpg"/><p><span>新</span>百岁老人跷家去<strong>8.0</strong></p>
+      </div>
+
+      <div>
+          <img src="images/05.jpg"/><p><span>新</span>暗金丑岛君电影版<strong>7.9</strong></p>
+      </div>
+
+      <div>
+          <img src="images/06.jpg"/><p><span>新</span>庆州<strong>7.0</strong>
+             
+                  <img  id="sm" src="images/icon.png"/> </p>
+      </div>
+
+      <div>
+          <img src="images/07.jpg"/><p><span>新</span>老千2：神之手<strong>7.1</strong></p>
+      </div>
+
+      <div>
+          <img src="images/08.jpg"/><p><span>新</span>教师日记<strong>8.0</strong></p>
+      </div>
+
+      <div>
+          <img src="images/09.jpg"/><p>歌曲改变人生 <strong>8.4</strong></p>
+      </div>
+
+      <div>
+          <img src="images/10.jpg"/><p>彗星来的那一夜<strong>8.3</strong></p>
+      </div>
+      <div>
+          <img src="images/11.jpg"/><p>法官老爹<strong>7.9</strong></p>
+      </div>
+      <div>
+          <img src="images/12.jpg"/><p>麦兜我和妈妈<strong>8.2</strong></p>
+      </div>
+      <div>
+          <img src="images/13.jpg"/><p>银河护卫队<strong>8.2</strong></p>
+      </div>
+      <div>
+          <img src="images/14.jpg"/><p>罪恶之城2<strong>6.8</strong> <img   id="sm1"src="images/icon.png"/>
+       
+          </p>
+     </div>
+     <div>
+         <img src="images/15.jpg"/><p>最高通缉犯<strong>7.1</strong></p>
+     </div>
+     <div>
+         <img src="images/16.jpg"/><p>热血高校3<strong>4.8</strong></p>
+     </div>
+     <div>
+         <img src="images/17.jpg"/><p>警察游戏<strong>6.6</strong></p>
+     </div>
+     <div>
+         <img src="images/18.jpg"/><p>宙斯之子：赫拉克勒斯<strong>6.0</strong></p>
+     </div>
+     <div>
+         <img src="images/19.jpg"/><p>弗兰克<strong>8.0</strong></p>
+     </div>
+     <div>
+         <img src="images/20.jpg"/><p>摩纳哥王妃<strong>6.8</strong></p>
+     </div>     
+
+</div> 
+
+<p class="p2"> <a href="" >加载更多</a></p>
+</div>
+</body>
+</html>
