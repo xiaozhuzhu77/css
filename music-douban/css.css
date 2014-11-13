@@ -1,0 +1,56 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    height:28px;
+    font:12px/28px Helvetica;
+    display:block;
+    list-style:none;
+    background-color:#545652;
+}
+
+.nav li{
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 8px;
+    float: left;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#d5d5d5;
+}
+
+.nav li.nav-right{
+    float:right;
+}
+
+.nav a:hover{
+    color:white;
+}
+
+.nav-search{
+    height:114px;
+    background-color:#f0f3ef;
+    overflow:hidden;
+    zoom:1;
+    margin-bottom:40px;
+}
+
+.db-music {
+    float:left;
+    height:56px;
+    width:145px;
+    margin:0 13px 0 0;
+}
+
+.db-music a{
+    text-decoration:none;
+    color:#555d53;
+    display:block;
+    line-height:100em;
+}
+
