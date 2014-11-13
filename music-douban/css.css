@@ -32,8 +32,9 @@
     color:white;
 }
 
-.nav-search{
+.db-search{
     height:114px;
+    width:100%;
     background-color:#f0f3ef;
     overflow:hidden;
     zoom:1;
@@ -41,16 +42,28 @@
 }
 
 .db-music {
-    float:left;
-    height:56px;
-    width:145px;
-    margin:0 13px 0 0;
+    float: left;
+    margin: 20px 30px 40px 0;
 }
 
 .db-music a{
-    text-decoration:none;
-    color:#555d53;
-    display:block;
-    line-height:100em;
+  }
+.nav2{
+    color: #555d53;
+    font-size: 13px;
 }
-
+.nav2 li{
+    list-style: none;
+    display:inline-block;
+}
+.nav2 .icon{
+    top:1px;
+    position:absolute;
+    left:68px;
+    vertical-align:middle;
+    margin-right:4px;
+}
+.nav2 li:hover{
+    color: white;
+    background-color: #555d53;
+}
