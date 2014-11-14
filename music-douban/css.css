@@ -24,7 +24,7 @@
     color:#d5d5d5;
 }
 
-.nav li.nav-right{
+.nav-right{
     float:right;
 }
 
@@ -34,36 +34,158 @@
 
 .db-search{
     height:114px;
-    width:100%;
     background-color:#f0f3ef;
     overflow:hidden;
     zoom:1;
     margin-bottom:40px;
+    text-align:center;
 }
-
-.db-music {
-    float: left;
-    margin: 20px 30px 40px 0;
+.search,.nav-search{
+    margin:0 auto;
 }
-
-.db-music a{
-  }
+.logo{  
+    float:left;
+}
+.inp{
+    background-color:#fff;
+    width:462px;
+    height:30px;
+    text-align:left;
+    padding-left:10px;
+    font-size:12px;
+    font-family:inherit;
+}
 .nav2{
     color: #555d53;
     font-size: 13px;
+    clear:both;
+    width:950px;
+    height:21px;
+    margin:48px 0;
+    border-top:1px solid #
 }
 .nav2 li{
     list-style: none;
     display:inline-block;
+    margin-right:30px;
 }
-.nav2 .icon{
+.icon{
+    position:relative;
+}
+.icon img{
     top:1px;
     position:absolute;
     left:68px;
     vertical-align:middle;
     margin-right:4px;
-}
+
+    } 
 .nav2 li:hover{
     color: white;
     background-color: #555d53;
+}
+.content{
+    width: 950px;
+    margin: 0 auto;
+    display:block;
+}
+.left{
+   float:left;
+   width:590px;
+   height: 2264px;
+    }
+.content h2{
+    color: #111;
+    font: 15px Arial;
+    height:22px;
+    margin:0 0 12px 0;
+    line-height:150%;
+}
+.content span{
+    font-size:12px;
+    color:#37a;
+    margin-left:10px;
+
+    }
+.content span:hover{
+    color:white;
+    background-color:#37a;
+}
+.musician{
+    height:308px;
+    background-color:#5de597;
+    }
+.pic,.pic2{
+    margin-bottom:46px;
+    }
+.jinqi{
+    height:613px;
+    }
+.zr{
+    background: url(images/gray_tab.png) no-repeat;
+    background-position:right top;
+    padding:2px 8px 2px 0;
+    color:#fff;
+}
+.dbxdb{
+    height:406px;
+    margin:14px 0 30px 0;
+    background-color:#5de597;
+}
+.rmlp{
+    height:458px;
+    background-color:#5de597;
+}
+.right{
+    width:310px;
+    height:2166px;
+    background-color:#5de597;
+    float:right;
+}
+.right2{
+    width:300px;
+    height:174px;
+    margin:26px 0;
+}
+.rmcp{
+    height:223px;
+    background-color:#762b63;
+    margin-bottom:30px;
+}
+.musician-dq{
+    height:714px;
+    background-color:#762b63;
+ }
+ .douban-250{
+     height:448px;
+     background-color:#762b63;
+     margin:40px 0 20px 0;
+}
+.app{
+    height:150px;
+    background-color:#762b63;
+    margin:44px 0 15px 0; 
+}
+.foot{
+    margin:30px 0 0 0;
+}
+.footer{
+    font:12px Helvetica;
+    line-height:1.62;
+    padding:6px 0;
+    margin-top:40px;
+    border-top:1px dashed #ddd;
+}
+.footer li{
+    color:#999;
+    list-style:none;
+    display:inline-block;
+    } 
+.rights{
+    color:#999;
+    margin-right:257px;
+}
+.footer a{
+    color:#37a;
+    text-decoration:none;
 }
