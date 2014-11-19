@@ -3,11 +3,17 @@
     margin: 0;
     padding: 0;
 }
-ul{
+ul, ol{ 
     list-style: none;
 }
 body{
     font-family:Helvetica,Arial,sans-serif;
+}
+div{
+    display:block;
+}
+a{
+    text-decoration:none;
 }
 .nav {
     height:28px;
@@ -25,7 +31,6 @@ body{
 }
 
 .nav a{
-    text-decoration:none;
     color:#d5d5d5;
 }
 
@@ -106,13 +111,13 @@ body{
     margin:0 0 12px 0;
     line-height:150%;
 }
-.sp{
+.sp,.program-nav a,.list h2 a{
     font-size:12px;
     color:#37a;
     margin-left:10px;
 
     }
-.sp:hover{
+.sp:hover,.program-nav a:hover,.list h2 a:hover,.musician-danqu-list li div a:hover{
     color:white;
     background-color:#37a;
 }
@@ -135,13 +140,14 @@ body{
     background: url(images/01.jpg) no-repeat;
     background-size: cover;
 }
+
 .cover a{
     display:block;
     width:180px;
     height:180px;
     text-decoration:none;
 }
-.cover span{
+.cover span,.cover1 span{
     position:absolute;
     top:50%;
     left:50%;
@@ -153,7 +159,7 @@ body{
     border-radius:50%;
     text-align:center;
 }
-.cover span:after{
+.cover span:after,.cover1 span:after{
     display:inline-block;
     width: 0;
     height: 0;
@@ -164,7 +170,7 @@ body{
     content:'';
     line-height:0;
     }
-.cover p{
+.cover p,.cover1 p{
     position:absolute;
      top:26%;
      font-size:13px;
@@ -173,17 +179,17 @@ body{
      text-align:center;
      display:block;
  }
- .cover:hover span{
+ .cover:hover span,.cover1:hover span{
     background:#fff;
     }
- .cover:hover span:after{
+ .cover:hover span:after,.cover1:hover span:after{
     border-color:transparent transparent transparent #111;
     }
- .cover:hover a{
+ .cover:hover a,.cover1:hover a{
     background:#333;
     opacity:.85;
     }
-.cover:hover p{
+.cover:hover p,.cover1:hover p{
     color:#fff;
     visibility:visible;
 }
@@ -201,24 +207,26 @@ body{
     color:#666;
     font-size:12px;
 }
-.ll{
-    float:left:
-}
-.first-artist h4{
-   font-size:14px;
+.ll h4{
+   font-size:12px;
    line-height:180%;
    font-weight:400;
     }
-.first-artist h4 a{
+#md{
     text-decoration:none;
+    font-size:14px;
+    line-height:180%;
     color:#37a;
 }
-.first-artist h4 a:hover{
+.ll h4 a{
+    text-decoration:none;
+    color:#37a;
+    font-size:12px;
+    line-height:1.62;
+}
+.ll h4 a:hover{
     color:#fff;
     background:#37a;
-}
-.ll p{
-    margin:8px 0;
 }
 .hot-right{
     float:left;
@@ -230,28 +238,178 @@ body{
     float:left;
     height: 144px;
     width: 100px;
-    background:red;
     margin-left: 28px;
     overflow:hidden;
 }
-
+.artist-img2{
+    background:url(images/chengbi.jpg) no-repeat;
+    background-size: cover;
+}
+.artist-img3{
+    background:url(images/03.jpg) no-repeat;
+    background-size: cover;
+}
+.artist-img4{
+    background:url(images/04.jpg) no-repeat;
+    background-size: cover;
+}
+.artist-img5{
+    background:url(images/05.jpg) no-repeat;
+    background-size: cover;
+}
+.artist-img6{
+    background:url(images/06.jpg) no-repeat;
+    background-size: cover;
+}
+.artist-img7{
+    background:url(images/07.jpg) no-repeat;
+    background-size: cover;
+}
+.cover1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.cover1 a{
+    display:block;
+    width:100px;
+    height:100px;
+    text-decoration:none;
+}
+.ll{
+    float:left:
+}
+.ll p{
+    margin:8px 0;
+}
 /*本周流行音乐人--END*/
 .pic,.pic2{
-    margin-bottom:46px;
+    margin-bottom:26px;
     }
-.jinqi{
+.program{
     height:613px;
     }
-.zr{
-    background: url(images/gray_tab.png) no-repeat;
-    background-position:right top;
-    padding:2px 8px 2px 0;
+.program-nav>ul{
+    display:inline-block;}   
+.program-nav>ul>li{
+    display:inline-block;
+    font-size:12px;
+    }
+.program-nav .hot{
+    padding:1px 8px 2px 9px;
+    color:#fff;
+    background-color:#9ba39a;
+    border-radius:3px;
+}
+.progranm-nav .hot:hover{
+    color:#fff;
+    background-color:#9ba39a;
+}
+.program .list{
+    display:inline-block;
+    width:292px;
+    height:157px;
+    margin-bottom:35px;
+    font-size:12px;
+    color:#666;
+}
+.prog-info{
+    float: left;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.hover-tip{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity:.85;
+    background:#222;
+}
+.list:hover .prog-info .hover-tip{
+    display:block;
+}
+.program .list img{
+    float:left;
+}
+.hover-tip i{
+    display:block;
+    width: 0;
+    height: 0;
+    margin-left: 16px;
+    margin-top:13px;
+    border-style: solid;
+    border-width: 8px 0 8px 13px;
+    border-color: transparent transparent transparent #fff;
+    content: '';
+    line-height: 0;
+}
+ 
+.program .list dd{
+    clear:both;
+    margin:46px 0 0 15px;
+}
+.program .list h2 a{
+    margin-left:4px;
+    font-size:14px;
+}
+.program .list span,.program .list div{
+    color:#999;
+    font-size:12px;
+}
+.program .list h2 div{
+    margin-left:44px;
+}
+
+.program .list li{
+    margin:5px 0;
+}
+.new-disc{
+    height:443px;
+    margin:14px 0 30px 0;
+}
+.new-artist li{
+    float:left;
+    width:118px;
+    height:183px;
+    font-size:12px;
+}
+.img{
+    width:80px;
+    height:80px;
+    overflow:hidden;
+}
+.there{
+    margin-top:10px;
+}
+.there>p>a{
+    color:#37a;
+    padding-left:3px;
+}
+.there a:hover{
+    background:#37a;
     color:#fff;
 }
-.dbxdb{
-    height:406px;
-    margin:14px 0 30px 0;
-    background-color:#5de597;
+.there p{
+    color:#666;
+    margin-bottom:7px;
+}
+.there i{
+    display:inline-block;
+    width:50px;
+    height:10px;
+    background: url(images/allstar.gif) no-repeat 0 -26px;
+}
+.there span{
+    color: #ff5138;
+}
+.there img{
+    width:88px;
+    height:12px;
+    margin-top:6px;
 }
 .rmlp{
     height:458px;
@@ -344,20 +502,36 @@ body{
     color:white;
     background-color:#37a;
 }
-.musician-dq{
+.musician-danqu{
     height:714px;
-    background-color:#762b63;
  }
- .musician-dq h2{
+ .musician-danqu h2{
     display:block;
     color:#111;
     font:15px Arial;
     line-height:150%;
 }
- .musician-dq span{
-    }
- .musician-dq ul{
-    }
+.musician-danqu-list{
+    color:#999;
+    font-size:12px;
+}
+.musician-danqu-list img{
+    float:left;
+}
+
+.musician-danqu-list li{
+    display:block;
+    height:64px;
+    margin-top:50px;
+}
+.anchor{
+    margin-left:65px;
+}
+
+.anchor a{
+    font-size:12px;
+    color:#37a;
+}
  .douban-250{
      height:448px;
      background-color:#762b63;
