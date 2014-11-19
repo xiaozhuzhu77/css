@@ -512,8 +512,9 @@ a{
     line-height:150%;
 }
 .musician-danqu-list{
-    color:#999;
+    color:#666;
     font-size:12px;
+    line-height:1.62;
 }
 .musician-danqu-list img{
     float:left;
@@ -532,7 +533,10 @@ a{
     font-size:12px;
     color:#37a;
 }
- .douban-250{
+.anchor div{
+    margin:5px 0;
+}
+.douban-250{
      height:448px;
      background-color:#762b63;
      margin:40px 0 20px 0;
