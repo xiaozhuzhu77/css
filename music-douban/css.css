@@ -34,10 +34,9 @@ a{
     color:#d5d5d5;
 }
 
-.nav-right{
+.nav .nav-right{
     float:right;
 }
-
 .nav a:hover{
     color:white;
 }
@@ -117,7 +116,8 @@ a{
     margin-left:10px;
 
     }
-.sp:hover,.program-nav a:hover,.list h2 a:hover,.musician-danqu-list li div a:hover{
+.sp:hover,.program-nav a:hover,.list h2 a:hover,.anchor a:hover,.artist-name a:hover,
+    .bgcolor a:hover,.descrip a:hover{
     color:white;
     background-color:#37a;
 }
@@ -399,9 +399,9 @@ a{
 }
 .there i{
     display:inline-block;
-    width:50px;
+    width:58px;
     height:10px;
-    background: url(images/allstar.gif) no-repeat 0 -26px;
+    background: url(images/midstars.gif) no-repeat 0 -22px;
 }
 .there span{
     color: #ff5138;
@@ -413,7 +413,77 @@ a{
 }
 .rmlp{
     height:458px;
-    background-color:#5de597;
+}
+.content3{
+    height:154px;
+}
+.bgcolor{
+    width:484px;
+    font-size:14px;
+    line-height:1.8;
+    background-color:#f0f3ef;
+}
+.bgcolor a,.descrip a{
+    color:#37a;
+}
+.bgcolor .bt-arrw{
+    float:right;
+    position:relative;
+    width:60px;
+    height:17px;
+    background:url(images/review.png) no-repeat 0 -14px;
+    margin-top:5px;
+    margin-right:-3px;
+}
+.bt-arrw em{
+    display:none;
+    position: absolute;
+    right:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:url(images/review.png) no-repeat 0 -32px;
+    }
+.bt-arrw:hover em{
+    display: inline-block;
+}
+.content3-img{
+    float:left;
+    width:81px;
+    height:114px;
+    padding-right:15px;
+    padding-bottom:15px;
+}
+.bgcolor{
+    height:25px;
+}
+.bgcolor a{
+    float:left;
+}
+
+.bgcolor,.zerenzhe,.descrip{
+    margin-left: 105px;
+    margin-top:12px;
+}
+.zerenzhe,.zerenzhe a{
+    font-size:12px;
+    line-height:1.62;
+    color:#666;
+}
+.zerenzhe a:hover{
+    color:#fff;
+    background-color: #666;
+}
+.zerenzhe i{
+    display:inline-block;
+    width:58px;
+    height:10px;
+    background: url(images/midstars.gif) no-repeat 0 -1px;
+}
+.descrip{
+    font-size:12px;
+    line-height:1.8;
+    color:#111;
 }
 .right{
     width:310px;
@@ -505,7 +575,10 @@ a{
 .musician-danqu{
     height:714px;
  }
- .musician-danqu h2{
+ .danqu-list{
+    margin-top:15px;
+}
+.musician-danqu h2{
     display:block;
     color:#111;
     font:15px Arial;
@@ -513,23 +586,30 @@ a{
 }
 .musician-danqu-list{
     color:#666;
+    margin-top:63px;
     font-size:12px;
     line-height:1.62;
 }
 .musician-danqu-list img{
     float:left;
 }
-
 .musician-danqu-list li{
     display:block;
     height:64px;
-    margin-top:50px;
+}
+.musician-danqu-list .pla{
+    display:block;
+    float:right;
+    background:url(images/song_chart_play.gif) no-repeat;
+    height:22px;
+    width:22px;
+    margin:-38px 10px 0 5px;
 }
 .anchor{
     margin-left:65px;
 }
 
-.anchor a{
+.anchor a,.artist-name a{
     font-size:12px;
     color:#37a;
 }
@@ -538,13 +618,64 @@ a{
 }
 .douban-250{
      height:448px;
-     background-color:#762b63;
      margin:40px 0 20px 0;
+}
+.douban-250 dl{
+    float:left;
+    width:85px;
+    height:122px;
+    margin: 0 18px 20px 0;
+    text-align:center;
+}
+.douban-250 dl dt{
+    height:100px;
+}
+.artist-name{
+    padding-top:3px;
 }
 .app{
     height:150px;
-    background-color:#762b63;
     margin:44px 0 15px 0; 
+}
+.entrance-link,.entrence-link:hover{
+    display:block;
+    position:relative;
+    padding:10px;
+    height:50px;
+    margin-top:10px;
+    border-radius:5px;
+    background:#f1f1f1 url("images/arrw.png") no-repeat scroll 97% 50%;
+    outline:none;
+    color:#4e4e4e;
+}
+.app-icon.icon-fm{
+    background-position:-250px;0;
+}
+.app-icon.icon-artist{
+    background-position:-50px;0;
+}
+.app-icon{
+    float:left;
+    width:50px;
+    height:50px;
+    border-radius:10px;
+    margin-right:13px;
+    background:url(images/app_icons.jpg) no-repeat -250px 0;
+    box-shadow:1px 1px 1px #999;
+}
+.main-title{
+    display:block;
+    color:#204d92;
+    font-size:16px;
+    font-weight:bold;
+    line-height:1;
+    padding-top:9px;
+}
+.sub-title{
+    display:block;
+    color:#4e4e4e;
+    margin-top:3px;
+    font-size:12px;
 }
 .foot{
     margin:30px 0 0 0;
@@ -553,7 +684,7 @@ a{
     font:12px Helvetica;
     line-height:1.62;
     padding:6px 0;
-    margin-top:40px;
+    margin:40px 0 20px 0;
     border-top:1px dashed #ddd;
 }
 .footer li{
