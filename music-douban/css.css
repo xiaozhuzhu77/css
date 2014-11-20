@@ -369,7 +369,7 @@ a{
 }
 .new-disc{
     height:443px;
-    margin:14px 0 30px 0;
+    margin:14px 0 0 0;
 }
 .new-artist li{
     float:left;
@@ -484,6 +484,12 @@ a{
     font-size:12px;
     line-height:1.8;
     color:#111;
+}
+.descrip-right{
+    display:block;
+    float:right;
+    margin-top:20px;
+    color:#37a;
 }
 .right{
     width:310px;
