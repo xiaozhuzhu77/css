@@ -4,10 +4,13 @@
     <meta charset="utf-8"/>
     <title>music.douban.com</title>
     <link href="css.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="http://img3.douban.com/favicon.ico" 
+            type="image/x-icon">
 </head>
 <body>
     <!--豆瓣导航-->
-    <ul class="nav">
+<div class="header-nav">
+    <ul>
         <li><a href="#">豆瓣</a></li>
         <li><a href="#">读书</a></li>
         <li><a href="#">电影</a></li>
@@ -18,24 +21,27 @@
         <li><a href="#">豆瓣FM</a></li>
         <li><a href="#">东西</a></li>
         <li><a href="#">更多</a></li>
-        <li class="nav-right"><a href="#">注册</a></li>
-        <li class="nav-right"><a href="#">登录</a></li>
     </ul>
-
+    <div class="header-nav-right">
+        <span><a href="#">登录</a></span>
+        <span><a href="#">注册</a></span>
+    </div>
+</div>
+    <!--音乐频道搜索-->
     <div class="db-search">
-        <div class="search">
             <div class="nav-search">
-                <div class="logo">
+                <a class="logo" href="#">
                     <img  src="images/logo.png"/>
-                </div>
-                <form method="get">
-                    <input class="inp" id="input-query" name="search-text" size="22"
+                </a>
+                <form method="get" class="form">
+                    <input class="inp" id="input-query" name="search-text"
+                             size="22"
                             value placeholder="唱片名、表演者、条码、ISRC"
                             autocomplete="off"/>
-                    <input type="image" src="#">
+                   <input  class="band" type="submit" value="搜索"/>
                </form>
-          </div>      
-      
+           </div>    
+           <em></em> 
         <ul class="nav2">
             <li>音乐人</li>
             <li class="icon">金羊毛计划<img  src="images/icon.gif"/></li>
@@ -44,8 +50,7 @@
             <li>分类浏览</li>
             <li>豆瓣FM</li>
        </ul>
-       </div>   
-    </div>
+</div>   
     <div class="content">
         <div class="left">
             <h2>本周流行音乐人<span class="sp">
@@ -124,7 +129,7 @@
             <div class="program">
                 <h2 class="program-nav">近期热门节目
                     <ul>
-                        <li><a class="hot" href="#">最热</a></li>
+                        <li><a class="hot"  id="hot1" href="#">最热</a></li>
                         <li><a href="#">流行</a></li>
                         <li><a href="#">摇滚</a></li>
                         <li><a href="#">民谣</a></li>
@@ -138,17 +143,66 @@
                             <img src="images/pro-01.jpg"/>
                             <div class="hover-tip"><i></i></div>
                         </div>
-                        <h2><a href="#">夜幕降临，跟着耳朵慰藉孤独</a><span>(11)</span>
+                        <h2><a href="#">夜幕降临，跟着耳朵慰藉孤独</a>
+                            <span>(11)</span>
                             <div>SNOW*ICE制作 | 4458收藏</div>
                         </h2>
                     </dt>
                         <dd>
-                            <ol>
-                                <li>1.All of the Stars-Ed Sheeran</li>
-                                <li>2.If This City Never Sleeps-Rosi...</li>
-                                <li>3.If You Want Me-Glen Hansard/...<li>
-                                <li>...</li>
-                            </ol>
+                            <a href="#">
+                                <ol>
+                                    <li>1.All of the Stars-Ed Sheeran</li>
+                                    <li>2.If This City Never Sleeps-Rosi
+                                    ...</li>
+                                    <li>3.If You Want Me-Glen Hansard/...
+                                    </li>
+                                    <li>...</li>
+                                </ol>
+                            </a>
+                       </dd>
+                </dl>
+                
+                <dl class="list">
+                    <dt>
+                        <div class="prog-info">
+                            <img src="images/pro-01.jpg"/>
+                            <div class="hover-tip"><i></i></div>
+                        </div>
+                            <h2><a href="#">夜幕降临，跟着耳朵慰藉孤独</a><span>(11)</span>
+                                <div>SNOW*ICE制作 | 4458收藏</div>
+                            </h2>
+                    </dt>
+                        <dd>
+                            <a href="#">
+                                <ol>
+                                    <li>1.All of the Stars-Ed Sheeran</li>
+                                    <li>2.If This City Never Sleeps-Rosi...</li>
+                                    <li>3.If You Want Me-Glen Hansard/...<li>
+                                    <li>...</li>
+                                </ol>
+                            </a>
+                        </dd>
+                </dl>
+
+                <dl class="list">
+                    <dt>
+                        <div class="prog-info">
+                            <img src="images/pro-01.jpg"/>
+                            <div class="hover-tip"><i></i></div>
+                        </div>
+                            <h2><a href="#">夜幕降临，跟着耳朵慰藉孤独</a><span>(11)</span>
+                                <div>SNOW*ICE制作 | 4458收藏</div>
+                            </h2>
+                    </dt>
+                        <dd>
+                            <a href="#">
+                                <ol>
+                                    <li>1.All of the Stars-Ed Sheeran</li>
+                                    <li>2.If This City Never Sleeps-Rosi...</li>
+                                    <li>3.If You Want Me-Glen Hansard/...<li>
+                                    <li>...</li>
+                                </ol>
+                            </a>
                         </dd>
                 </dl>
                 
@@ -163,12 +217,14 @@
                             </h2>
                     </dt>
                         <dd>
-                            <ol>
-                                <li>1.All of the Stars-Ed Sheeran</li>
-                                <li>2.If This City Never Sleeps-Rosi...</li>
-                                <li>3.If You Want Me-Glen Hansard/...<li>
-                                <li>...</li>
-                            </ol>
+                            <a href="#">
+                                <ol>
+                                    <li>1.All of the Stars-Ed Sheeran</li>
+                                    <li>2.If This City Never Sleeps-Rosi...</li>
+                                    <li>3.If You Want Me-Glen Hansard/...<li>
+                                    <li>...</li>
+                                </ol>
+                            </a>
                         </dd>
                 </dl>
 
@@ -183,32 +239,14 @@
                             </h2>
                     </dt>
                         <dd>
-                            <ol>
-                                <li>1.All of the Stars-Ed Sheeran</li>
-                                <li>2.If This City Never Sleeps-Rosi...</li>
-                                <li>3.If You Want Me-Glen Hansard/...<li>
-                                <li>...</li>
-                            </ol>
-                        </dd>
-                </dl>
-                
-                <dl class="list">
-                    <dt>
-                        <div class="prog-info">
-                            <img src="images/pro-01.jpg"/>
-                            <div class="hover-tip"><i></i></div>
-                        </div>
-                            <h2><a href="#">夜幕降临，跟着耳朵慰藉孤独</a><span>(11)</span>
-                                <div>SNOW*ICE制作 | 4458收藏</div>
-                            </h2>
-                    </dt>
-                        <dd>
-                            <ol>
-                                <li>1.All of the Stars-Ed Sheeran</li>
-                                <li>2.If This City Never Sleeps-Rosi...</li>
-                                <li>3.If You Want Me-Glen Hansard/...<li>
-                                <li>...</li>
-                            </ol>
+                            <a href="#">
+                                <ol>
+                                    <li>1.All of the Stars-Ed Sheeran</li>
+                                    <li>2.If This City Never Sleeps-Rosi...</li>
+                                    <li>3.If You Want Me-Glen Hansard/...<li>
+                                    <li>...</li>
+                                </ol>
+                            </a>
                         </dd>
                 </dl>
 
@@ -223,32 +261,14 @@
                             </h2>
                     </dt>
                         <dd>
-                            <ol>
-                                <li>1.All of the Stars-Ed Sheeran</li>
-                                <li>2.If This City Never Sleeps-Rosi...</li>
-                                <li>3.If You Want Me-Glen Hansard/...<li>
-                                <li>...</li>
-                            </ol>
-                        </dd>
-                </dl>
-
-                <dl class="list">
-                    <dt>
-                        <div class="prog-info">
-                            <img src="images/pro-01.jpg"/>
-                            <div class="hover-tip"><i></i></div>
-                        </div>
-                            <h2><a href="#">夜幕降临，跟着耳朵慰藉孤独</a><span>(11)</span>
-                                <div>SNOW*ICE制作 | 4458收藏</div>
-                            </h2>
-                    </dt>
-                        <dd>
-                            <ol>
-                                <li>1.All of the Stars-Ed Sheeran</li>
-                                <li>2.If This City Never Sleeps-Rosi...</li>
-                                <li>3.If You Want Me-Glen Hansard/...<li>
-                                <li>...</li>
-                            </ol>
+                            <a href="#">
+                                <ol>
+                                    <li>1.All of the Stars-Ed Sheeran</li>
+                                    <li>2.If This City Never Sleeps-Rosi...</li>
+                                    <li>3.If You Want Me-Glen Hansard/...<li>
+                                    <li>...</li>
+                                </ol>
+                            </a>
                         </dd>
                 </dl>
             </div>
@@ -256,7 +276,7 @@
             <div class="new-disc">
                 <h2 class="program-nav">豆瓣新碟榜
                     <ul>
-                        <li><a class="hot" href="#">最热</a></li>
+                        <li><a class="hot" id="hot2" href="#">最热</a></li>
                         <li><a href="#">话语</a></li>
                         <li><a href="#">欧美</a></li>
                         <li><a href="#">日韩</a></li>
@@ -399,7 +419,7 @@
             <div class="rmlp">
                 <h2 class="program-nav">热门乐评
                     <ul>
-                        <li><a class="hot" href="#">流行</a></li>
+                        <li><a class="hot" id="hot3" href="#">流行</a></li>
                         <li><a href="#">摇滚</a></li>
                         <li><a href="#">电子</a></li>
                         <li><a href="#">古典与爵士</a></li>
@@ -546,7 +566,7 @@
                 <h2 class="program-nav">本周热门音乐人单曲
                     <a href="#">更多&raquo;</a>
                     <ul class="danqu-list">
-                        <li><a href="#" class="hot">最热</a></li>
+                        <li><a href="#" class="hot" id="hot4">最热</a></li>
                         <li><a href="#">摇滚</a></li>
                         <li><a href="#">民谣</a></li>
                         <li><a href="#">流行</a></li>
@@ -653,7 +673,7 @@
                 </h2>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/hebe.jpg"/>
                         </a>
                     </dt>
@@ -663,7 +683,7 @@
                </dl>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/001.jpg"/>
                         </a>
                     </dt>
@@ -673,7 +693,7 @@
                </dl>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/002.jpg"/>
                         </a>
                     </dt>
@@ -683,7 +703,7 @@
                </dl>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/003.jpg"/>
                         </a>
                     </dt>
@@ -693,7 +713,7 @@
                </dl>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/004.jpg"/>
                         </a>
                     </dt>
@@ -703,7 +723,7 @@
                </dl>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/005.jpg"/>
                         </a>
                     </dt>
@@ -713,7 +733,7 @@
                </dl>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/006.jpg"/>
                         </a>
                     </dt>
@@ -723,7 +743,7 @@
                </dl>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/007.jpg"/>
                         </a>
                     </dt>
@@ -733,7 +753,7 @@
                </dl>
                 <dl>
                     <dt>
-                        <a src="#">
+                        <a href="#">
                             <img src="images/008.jpg"/>
                         </a>
                     </dt>
@@ -774,9 +794,5 @@
             <li class="dian">.</li>
             <li><a href="#">豆瓣广告</a></li>
       </ul>
-
-
 </body>
 </html>
-
-
