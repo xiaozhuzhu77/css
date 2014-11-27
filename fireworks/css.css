@@ -1,0 +1,56 @@
+@charset "utf-8";
+body, div, h2, span {
+   margin: 0;
+   padding: 0; 
+}
+.content {
+    margin: 0 auto;
+    background: #5ca7de;
+}
+.content_top {
+    height: 340px;
+    padding-left:15px;
+    background: #436396 url(images/top_bg.png) no-repeat;
+    background-size: 100% 100px;
+    overflow: hidden;
+}
+.content_top h2 {
+    margin-top: 20px;
+    font: italic 16px/16px Arial;
+    font-weight: bold;
+    color: #fff;
+}
+.content_top h2 span {
+    margin-left: 18px;
+    font: normal 20px/20px Micrsoft Yahei;
+    color: #fff;
+    vertical-align: middle;
+}
+.content_top img {
+    width: 84px;
+    height: 84px;
+    margin: 27px 0 16px 36px;
+}
+.banji{
+    float: left;
+    width: 160px;
+    height: 200px;
+    padding-left:8px;
+    margin-top: 26px;
+    background: #fff;
+    clear: both;
+}
+.banji span{
+    font: 16px;
+    color: #5ca7de;
+}
+.content_top>span {
+    margin-left: 37px;
+    font: normal 27px/27px microsoft Yahei;
+    color: #fff;
+}
+.paragraph {
+    font-size: 16px;
+    color: #fff;
+}
+
